@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Welcome to the DevConnector</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html"> <i class="fas fa-bug"></i> DevForum </a>
+        </div>
+        <ul>
+            <li><a href="profiles.html">Developers</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <section class="register section">
+        <h1 class="header-text">Sing Up</h1>
+        <p class="lead"><i class="fas fa-user"></i> Create Your Account</p>
+        <div class="alert">
+            <h3></h3>
+        </div>
+        <form class="form">
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            <input type="email" name="email" id="email" placeholder="Email Address" required>
+            <input type="password" name="password" id="password" placeholder="Password" minlength="6" required>
+            <input type="password" name="password" id="confPassword" placeholder="Confirm Password" minlength="6" required>
+            <input type="submit" name="register" class="btn-primary" id="submitBtn" value="Register">
+        </form>
+        <h3>Already have an account? <a href="login.html">Sing in</a></h3>
+    </section>
+
+</body>
+
+</html>

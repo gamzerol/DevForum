@@ -1,0 +1,73 @@
+.developers {
+    
+    &-card {
+        
+        .card {
+            padding: 2rem 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            grid-gap: 1.2rem;
+            justify-content: center;
+            align-items: center;  
+            margin-top: 2rem;         
+            
+            img {
+                width: 250px;
+                border-radius: 1rem;
+            }
+            &-left {
+                button {
+                    padding: .5rem;
+                    border: none;
+                    cursor: pointer;
+                    margin-top: 1rem;
+                    border-radius: .5rem;
+
+                    &:hover {
+                        background-color: rgb(61, 162, 230);
+                    }
+                }
+            }
+            &-right {
+                justify-self: center;
+                color: $primary-color;
+                
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .navbar {
+        width: 414px;
+        justify-content: space-evenly;
+    }
+    
+    .developers {
+        margin: 0!important;
+        width: 100%!important;
+        text-align: center;
+        .header-text {
+            font-size: 2rem;
+        }
+        &-card {
+            width: 100%!important;
+            .card {
+                display: grid;
+                grid-template-columns: 1fr;
+                text-align: center;
+                img {
+                    width: 150px;
+                }
+                img, &-right, &-left {
+                    margin: auto;
+                }
+                &-right ul{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

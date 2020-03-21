@@ -1,0 +1,54 @@
+$primary-color: #17a2b8;
+$dark-color: #343a40;
+$light-color: #f4f4f4;
+$danger-color: #dc3545;
+$success-color: #28a745;
+$logo-color: #fb6347;
+$card-color: #333;
+$max-width: 1100px;
+
+.bg-card {
+    background-color: #f4f4f4;
+    color: $card-color;
+    border: 1px solid rgba(143, 140, 140, 0.534);
+}
+
+@keyframes shake {
+
+    0% {
+        transform: translate(0);
+    }
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(5px, 0, 0);
+    }
+}
+
+@mixin button-animation {
+    border: 1px solid rgba(143, 140, 140, 0.534);
+    padding: .5rem;
+    margin-right: 1rem;
+    
+    &:hover {
+    color: tomato;
+    box-shadow: 0px 18px 16px -11px rgb(89, 89, 86);
+    }
+}
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem!important;
+        margin-top: 7rem!important;
+        text-align: center;
+    }
+}

@@ -1,0 +1,47 @@
+.profile {
+
+    .form {
+
+        &-select {
+            margin-bottom: 1rem;
+            padding: .5rem;
+            font-size: 1rem;
+        }
+        textarea {
+            font-size: 1.1rem;
+            padding: .5rem;
+        }
+    }
+
+    &-btn-social {
+        width: 200px;
+        cursor: pointer;
+        @include button-animation;
+    }
+    &-link-form {
+        .input-group {
+            display: flex;
+            input {
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    &-btns {
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+        &-back {
+            &:hover {
+                color: $logo-color;
+            }
+        }
+        &-save {
+            margin-left: 1rem;
+            cursor: pointer;
+            float: right;
+            font-size: 1rem;
+            @include button-animation;           
+        }
+        
+    }
+}
